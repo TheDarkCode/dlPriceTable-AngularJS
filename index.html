@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dlpricetable-angularjs by TheDarkCode</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dlpricetable-angularjs</h1>
+        <p>Barebones example to generate price tables with AngularJS.</p>
+
+        <p class="view"><a href="https://github.com/TheDarkCode/dlPriceTable-AngularJS">View the Project on GitHub <small>TheDarkCode/dlPriceTable-AngularJS</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/TheDarkCode/dlPriceTable-AngularJS/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/dlPriceTable-AngularJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/dlPriceTable-AngularJS">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="dlpricetable-angularjs" class="anchor" href="#dlpricetable-angularjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dlPriceTable-AngularJS</h1>
+
+<p>Barebones example to generate price tables with AngularJS.</p>
+
+<p>Dependencies: xeditable.</p>
+
+<p>Some functionality is only set up for you to add yourself. Simple ways to change the look of the price table using attributes such as title, price, route, buttoncolor, buttontext, color, features, theme, and custom classes on <code>&lt;dl-price-table&gt; &lt;/dl-price-table&gt;</code>.</p>
+
+<h1>
+<a id="sample-usage" class="anchor" href="#sample-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Usage</h1>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>panel panel-default<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>panel-heading<span class="pl-pds">"</span></span>&gt;
+        Sample Price Tables
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>panel panel-body<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">dl</span><span class="pl-e">-price-table</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Sample Product<span class="pl-pds">"</span></span>
+                            <span class="pl-e">price</span>=<span class="pl-s"><span class="pl-pds">"</span>$199<span class="pl-pds">"</span></span>
+                            <span class="pl-e">route</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttoncolor</span>=<span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttontext</span>=<span class="pl-s"><span class="pl-pds">"</span>Buy Now!<span class="pl-pds">"</span></span>
+                            <span class="pl-e">color</span>=<span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>
+                            <span class="pl-e">features</span>=<span class="pl-s"><span class="pl-pds">"</span>['Feature 1', 'Feature 2', 'Feature 3']<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">dl</span><span class="pl-e">-price-table</span>&gt;
+            &lt;<span class="pl-ent">dl</span><span class="pl-e">-price-table</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Sample Product<span class="pl-pds">"</span></span>
+                            <span class="pl-e">price</span>=<span class="pl-s"><span class="pl-pds">"</span>$199<span class="pl-pds">"</span></span>
+                            <span class="pl-e">route</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttoncolor</span>=<span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttontext</span>=<span class="pl-s"><span class="pl-pds">"</span>Buy Now!<span class="pl-pds">"</span></span>
+                            <span class="pl-e">color</span>=<span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>
+                            <span class="pl-e">features</span>=<span class="pl-s"><span class="pl-pds">"</span>['Feature 1', 'Feature 2', 'Feature 3']<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">dl</span><span class="pl-e">-price-table</span>&gt;
+            &lt;<span class="pl-ent">dl</span><span class="pl-e">-price-table</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Sample Product<span class="pl-pds">"</span></span>
+                            <span class="pl-e">price</span>=<span class="pl-s"><span class="pl-pds">"</span>$199<span class="pl-pds">"</span></span>
+                            <span class="pl-e">route</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttoncolor</span>=<span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttontext</span>=<span class="pl-s"><span class="pl-pds">"</span>Buy Now!<span class="pl-pds">"</span></span>
+                            <span class="pl-e">color</span>=<span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>
+                            <span class="pl-e">features</span>=<span class="pl-s"><span class="pl-pds">"</span>['Feature 1', 'Feature 2', 'Feature 3']<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">dl</span><span class="pl-e">-price-table</span>&gt;
+            &lt;<span class="pl-ent">dl</span><span class="pl-e">-price-table</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Sample Product<span class="pl-pds">"</span></span>
+                            <span class="pl-e">price</span>=<span class="pl-s"><span class="pl-pds">"</span>$199<span class="pl-pds">"</span></span>
+                            <span class="pl-e">route</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttoncolor</span>=<span class="pl-s"><span class="pl-pds">"</span>warning<span class="pl-pds">"</span></span>
+                            <span class="pl-e">buttontext</span>=<span class="pl-s"><span class="pl-pds">"</span>Buy Now!<span class="pl-pds">"</span></span>
+                            <span class="pl-e">color</span>=<span class="pl-s"><span class="pl-pds">"</span>grey<span class="pl-pds">"</span></span>
+                            <span class="pl-e">features</span>=<span class="pl-s"><span class="pl-pds">"</span>['Feature 1', 'Feature 2', 'Feature 3']<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">dl</span><span class="pl-e">-price-table</span>&gt;
+
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
